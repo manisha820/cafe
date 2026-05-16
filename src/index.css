@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Epilogue:wght@600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Epilogue", sans-serif;
+
+  --color-primary: #994207;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #b85a21;
+  --color-on-primary-container: #fffbff;
+  
+  --color-secondary: #745850;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fdd7cd;
+  --color-on-secondary-container: #785c54;
+
+  --color-background: #fff8f6;
+  --color-on-background: #231915;
+  
+  --color-surface: #fff8f6;
+  --color-on-surface: #231915;
+  --color-on-surface-variant: #56433a;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff1eb;
+  --color-surface-container: #fdeae2;
+  --color-surface-container-high: #f7e4dc;
+  --color-surface-container-highest: #f2dfd7;
+  
+  --color-outline: #897268;
+  --color-outline-variant: #dcc1b5;
+  
+  --color-error: #ba1a1a;
+}
+
+@layer utilities {
+  .tonal-layer {
+    box-shadow: 0 20px 25px -5px rgba(67, 44, 37, 0.08);
+  }
+}
+
+body {
+  @apply bg-background text-on-surface antialiased;
+}
